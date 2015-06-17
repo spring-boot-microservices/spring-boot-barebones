@@ -3,11 +3,15 @@ Spring Boot 'Hello, World!' application
 ---------------------------------------
 
 + Build
-If Gradle is installed, then type gradle build in a terminal window.
+gradle build (if gradle is installed)
+OR
+./gradlew build (if you choose not to install gradle)
 This will generate the executable jar build/libs/boothelloworld-0.0.1-SNAPSHOT.jar.
 
 + Run
 gradle run
+OR
+./gradlew run
 OR
 java -jar build/libs/boothelloworld-0.0.1-SNAPSHOT.jar
 Once you see the message Started HelloWorldController... in the terminal window, accessing http://localhost:8080 in a browser or typing curl http://localhost:8080 should display Hello, World!.
