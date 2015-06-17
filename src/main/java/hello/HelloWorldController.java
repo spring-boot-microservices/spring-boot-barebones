@@ -15,8 +15,8 @@ public class HelloWorldController {
         return "Hello, World!";
     }
 
-    public static void main(String[] args) {
+    /*public static void main(String[] args) {
         SpringApplication.run(HelloWorldController.class, args);
-    }
+    }*/
 }
 
