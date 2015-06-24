@@ -2,6 +2,8 @@
 Spring Boot 'Hello, World!' application
 ---------------------------------------
 
+Package as executable jar
+-------------------------
 + Build
 gradle build (if gradle is installed)
 OR
@@ -15,4 +17,12 @@ OR
 OR
 java -jar build/libs/boothelloworld-0.0.1-SNAPSHOT.jar
 Once you see the message Started HelloWorldController... in the terminal window, accessing http://localhost:8080 in a browser or typing curl http://localhost:8080 should display Hello, World!.
+
+
+Package as war
+--------------
++ build.gradle
+  - apply plugin: 'war'
+  - providedRuntime("org.springframework.boot:spring-boot-starter-tomcat")
++ Main class needs to extend SpringBootServletInitializer
 
